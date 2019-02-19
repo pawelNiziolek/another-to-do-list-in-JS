@@ -1,0 +1,465 @@
+/* 
+font-family: 'Arvo', serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(131, 214, 235);
+  background-image: url(tło4.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  overflow-x: hidden;
+  animation: move 17s linear infinite;
+}
+
+/* zatrzymanie animacji: */
+.no-anime {
+  animation: move 0s;
+}
+
+@keyframes move {
+  0% {
+    background-size: 101% auto;
+    background-position: 50%;
+  }
+
+  1.5% {
+    background-size: 102% auto;
+    background-position: 48%;
+  }
+
+  3.33% {
+    background-size: 104% auto;
+    background-position: 45%;
+  }
+
+  6.66% {
+    background-size: 106% auto;
+    background-position: 39%;
+  }
+
+  9.99% {
+    background-size: 109% auto;
+    background-position: 33%;
+  }
+
+  13.33% {
+    background-size: 112% auto;
+    background-position: 27%;
+  }
+
+  16.65% {
+    background-size: 115% auto;
+    background-position: 21%;
+  }
+
+  19.98% {
+    background-size: 118% auto;
+    background-position: 15%;
+  }
+
+  23.31% {
+    background-size: 121% auto;
+    background-position: 8%;
+  }
+
+  26.64% {
+    background-size: 124% auto;
+    background-position: 5%;
+  }
+
+  29.97% {
+    background-size: 127% auto;
+    background-position: 7%;
+  }
+
+  33.3% {
+    background-size: 130% auto;
+    background-position: 12%;
+  }
+
+  36.63% {
+    background-size: 133% auto;
+    background-position: 19%;
+  }
+
+  39.96% {
+    background-size: 136% auto;
+    background-position: 25%;
+  }
+
+  43.29% {
+    background-size: 139% auto;
+    background-position: 30%;
+  }
+
+  46.62% {
+    background-size: 142% auto;
+    background-position: 35%;
+  }
+
+  49.95% {
+    background-size: 145% auto;
+    background-position: 40%;
+  }
+
+  53.28% {
+    background-size: 146% auto;
+    background-position: 45%;
+  }
+
+  56.61% {
+    background-size: 144% auto;
+    background-position: 50%;
+  }
+
+  59.94% {
+    background-size: 141% auto;
+    background-position: 55%;
+  }
+
+  63.27% {
+    background-size: 138% auto;
+    background-position: 60%;
+  }
+
+  66.6% {
+    background-size: 134% auto;
+    background-position: 65%;
+  }
+
+  69.93% {
+    background-size: 130% auto;
+    background-position: 70%;
+  }
+
+  73.26% {
+    background-size: 126% auto;
+    background-position: 75%;
+  }
+
+  76.59% {
+    background-size: 123% auto;
+    background-position: 77%;
+  }
+
+  79.92% {
+    background-size: 120% auto;
+    background-position: 75%;
+  }
+
+  83.25% {
+    background-size: 117% auto;
+    background-position: 70%;
+  }
+
+  86.58% {
+    background-size: 114% auto;
+    background-position: 65%;
+  }
+
+  89.91% {
+    background-size: 111% auto;
+    background-position: 60%;
+  }
+
+  93.24% {
+    background-size: 107% auto;
+    background-position: 55%;
+  }
+
+  95% {
+    background-size: 104% auto;
+    background-position: 53%;
+  }
+
+  98.5% {
+    background-size: 102% auto;
+    background-position: 51.5%;
+  }
+
+  100% {
+    background-size: 101% auto;
+    background-position: 50.5%;
+  }
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap-search {
+  position: relative;
+  width: 17%;
+  min-height: 80vh;
+}
+
+label {
+  display: inline-block;
+  font-family: 'Arvo', serif;
+  color: white;
+  text-shadow: 0 0 5px white;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.605);
+  width: 85%;
+  border: none;
+  font-size: 17px;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.stop {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  padding: 5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 0 4px 2px white;
+  text-shadow: 0 0 3px black;
+  width: 65%;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.stop:hover {
+  box-shadow: 0 0 4px 2px red;
+  color: red;
+}
+
+.search,
+.clock {
+  margin: 2%;
+  padding: 1%;
+}
+
+h3.date,
+h3.time span {
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 0 6px black, 0 0 8px white;
+}
+
+@keyframes spangrow {
+  0% {
+    font-size: 5px;
+  }
+}
+
+h3.time span {
+  animation: spangrow 1s .3s linear;
+}
+
+h3.time,
+h3.date {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+@keyframes movedate {
+  0% {
+    bottom: 56%;
+    left: 100%;
+    font-size: 1px;
+  }
+
+  20% {
+    bottom: 55%;
+    left: 40%;
+    font-size: 3px;
+  }
+
+  40% {
+    bottom: 52%;
+    left: 20%;
+    font-size: 5px;
+  }
+
+  55% {
+    bottom: 45%;
+    left: 0%;
+    font-size: 8px;
+  }
+
+  75% {
+    bottom: 30%;
+    left: 10%;
+    font-size: 12px;
+  }
+
+  90% {
+    bottom: 23%;
+    left: 20%;
+    font-size: 18px;
+  }
+}
+
+h3.date {
+  bottom: 13%;
+  animation: movedate .8s .4s linear;
+}
+
+h3.time {
+  bottom: 8%;
+}
+
+.wrap-all-to-do h1,
+.wrap-all-to-do h2 {
+  font-family: 'Arvo', serif;
+}
+
+.wrap-all-to-do h1 {
+  font-size: 35px;
+  padding: 10px 10px 4vh 10px;
+  cursor: pointer;
+  text-shadow: 0 0 2px white, 0 0 15px white;
+  transition: .3s;
+}
+
+.wrap-all-to-do h1:hover {
+  text-shadow: 0 0 20px rgb(228, 10, 10);
+}
+
+.wrap-all-to-do h2 {
+  font-size: 24px;
+  padding: 5px;
+  color: white;
+  text-shadow: 0 0 3px black, 0 0 4px white;
+}
+
+ul {
+  text-align: left;
+  margin-left: 2%;
+  list-style: decimal;
+  color: white;
+  text-shadow: 0 0 6px black, 0 0 10px white;
+}
+
+li {
+  align-items: center;
+  font-size: 17px;
+  color: white;
+  text-shadow: 0 0 6px black, 0 0 10px white;
+  padding: 2px;
+  margin: 5%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  text-shadow: 0 0 12px white;
+}
+
+li button {
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  font-size: 20px;
+  line-height: 14px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 4px 2px white;
+  border-radius: 50%;
+  text-shadow: none;
+  transition: .2s;
+}
+
+li button:hover {
+  color: red;
+  box-shadow: 0 0 4px 2px red, 0 0 6px 4px white;
+}
+
+i.fa-plus-square {
+  transition: .2s;
+}
+
+i.fa-plus-square:hover {
+  color: rgb(119, 20, 20);
+}
+
+.wrap-all-to-do,
+.wrap-to-do,
+.to-do {
+  display: flex;
+}
+
+.wrap-all-to-do {
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.wrap-to-do {
+  min-height: 75vh;
+  width: 100%;
+  justify-content: space-around;
+
+}
+
+.to-do {
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  transition: .3s cubic-bezier(0.18, 0.69, 0.52, 1.28);
+  border-radius: 4px;
+  box-shadow: 0 0 10px 1px white;
+}
+
+.to-do-one,
+.to-do-two,
+.to-do-three {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.to-do.one {
+  background-image: url(to-do-one.jpg);
+  background-position: center;
+
+}
+
+.to-do.two {
+  background-image: url(to-do-two.jpg);
+  background-position: center;
+}
+
+.to-do.three {
+  background-image: url(to-do-three.jpg);
+  background-position: 57%;
+  margin-right: 30px;
+}
+
+.grow {
+  position: relative;
+  transform: scale(1.2);
+  width: 40%;
+  margin-top: 30px;
+  z-index: 9;
+}

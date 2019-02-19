@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lista zadań</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="toDoList.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="wrap-search">
+      <div class="search">
+        <label for="look">Wyszukaj zadanie:</label>
+        <input type="text" class="search-i" for="look">
+        <ul class="ul-search"></ul>
+      </div>
+      <div class="clock">
+        <h3 class="date"></h3>
+        <h3 class="time"><span class="hour"></span><span class="minute"></span><span class="second"></span></h3>
+      </div>
+      <div class="stop">Zatrzymaj animację</div>
+    </div>
+    <div class="wrap-all-to-do">
+      <h1>Zadania do zrobienia</h1>
+      <div class="wrap-to-do">
+        <div class="to-do one">
+          <h2>Na dzisiaj</h2>
+          <form action="" class="f-one">
+            <input type="text">
+            <button class="b-one"><i class="fas fa-plus-square"></i></button>
+            <ul class="one"></ul>
+          </form>
+        </div>
+        <div class="to-do two">
+          <h2>Na jutro</h2>
+          <form action="" class="f-two">
+            <input type="text">
+            <button class="b-two"><i class="fas fa-plus-square"></i></button>
+            <ul class="two"><span></span></ul>
+          </form>
+        </div>
+        <div class="to-do three">
+          <h2>Bez pośpiechu</h2>
+          <form action="" class="f-three">
+            <input type="text">
+            <button class="b-three"><i class="fas fa-plus-square"></i></button>
+            <ul class="three"><span></span></ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="toDoList.js"></script>
+</body>
+
+</html>
