@@ -3,4 +3,4 @@ first repository
 
 It's only another to do app and my first repository in GitHub ;)
 
-I used JS, CS and HTML
+I used JS, CSS and HTML
