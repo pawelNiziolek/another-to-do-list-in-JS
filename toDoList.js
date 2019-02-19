@@ -1,6 +1,4 @@
 
-// wyszukiwarka:
-
 // data:
 const date = document.querySelector("h3.date");
 const newDate = new Date();
