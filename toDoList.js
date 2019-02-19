@@ -1,4 +1,3 @@
-// <i class="fas fa-trash-alt"></i>  kosz
 
 // wyszukiwarka:
 
