@@ -334,6 +334,7 @@ h3.time {
   font-size: 35px;
   padding: 10px 10px 4vh;
   width: 100%;
+  text-align: center;
   cursor: pointer;
   text-shadow: 0 0 2px white, 0 0 15px white;
   transition: .3s;
