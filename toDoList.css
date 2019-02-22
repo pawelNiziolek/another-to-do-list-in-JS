@@ -332,7 +332,8 @@ h3.time {
 
 .wrap-all-to-do h1 {
   font-size: 35px;
-  padding: 10px 10px 4vh 10px;
+  padding: 10px 10px 4vh;
+  width: 95%;
   cursor: pointer;
   text-shadow: 0 0 2px white, 0 0 15px white;
   transition: .3s;
