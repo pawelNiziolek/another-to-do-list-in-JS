@@ -48,10 +48,8 @@ toDoDivs.forEach(toDoDiv => toDoDiv.addEventListener("click", growDiv));
 const removeGrow = () => {
   toDoDivs.forEach(toDoDiv => toDoDiv.classList.remove("grow"));
 };
-const h1 = document.querySelector("h1").addEventListener("click", removeGrow);
-const inputSearch = document
-  .querySelector(".search-i")
-  .addEventListener("click", removeGrow);
+document.querySelector("h1").addEventListener("click", removeGrow);
+document.querySelector(".wrap-search").addEventListener("click", removeGrow);
 
 // dodawanie zadań :
 // zadania na dzisiaj:
