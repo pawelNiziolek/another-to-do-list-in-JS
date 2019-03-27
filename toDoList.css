@@ -6,7 +6,7 @@ font-family: 'Arvo', serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -198,7 +198,7 @@ body {
   justify-content: space-around;
 }
 
-.wrap-search {
+div.wrap-search {
   position: relative;
   width: 17%;
   min-height: 80vh;
@@ -206,7 +206,7 @@ body {
 
 label {
   display: inline-block;
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
   color: white;
   text-shadow: 0 0 5px white;
   font-size: 20px;
@@ -237,7 +237,7 @@ input {
   text-align: center;
   border-radius: 3px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .stop:hover {
@@ -254,7 +254,7 @@ input {
 h3.date,
 h3.time span {
   text-align: center;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 30px;
   color: white;
   text-shadow: 0 0 6px black, 0 0 8px white;
@@ -267,7 +267,7 @@ h3.time span {
 }
 
 h3.time span {
-  animation: spangrow 1s .3s linear;
+  animation: spangrow 1s 0.3s linear;
 }
 
 h3.time,
@@ -318,7 +318,7 @@ h3.date {
 
 h3.date {
   bottom: 13%;
-  animation: movedate .8s .4s linear;
+  animation: movedate 0.8s 0.4s linear;
 }
 
 h3.time {
@@ -327,7 +327,7 @@ h3.time {
 
 .wrap-all-to-do h1,
 .wrap-all-to-do h2 {
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
 }
 
 .wrap-all-to-do h1 {
@@ -337,7 +337,7 @@ h3.time {
   text-align: center;
   cursor: pointer;
   text-shadow: 0 0 2px white, 0 0 15px white;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .wrap-all-to-do h1:hover {
@@ -388,7 +388,7 @@ li button {
   box-shadow: 0 0 4px 2px white;
   border-radius: 50%;
   text-shadow: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 li button:hover {
@@ -397,7 +397,7 @@ li button:hover {
 }
 
 i.fa-plus-square {
-  transition: .2s;
+  transition: 0.2s;
 }
 
 i.fa-plus-square:hover {
@@ -420,7 +420,6 @@ i.fa-plus-square:hover {
   min-height: 75vh;
   width: 100%;
   justify-content: space-around;
-
 }
 
 .to-do {
@@ -428,7 +427,7 @@ i.fa-plus-square:hover {
   text-align: center;
   width: 30%;
   padding: 10px;
-  transition: .3s cubic-bezier(0.18, 0.69, 0.52, 1.28);
+  transition: 0.3s cubic-bezier(0.18, 0.69, 0.52, 1.28);
   border-radius: 4px;
   box-shadow: 0 0 10px 1px white;
 }
@@ -440,11 +439,9 @@ i.fa-plus-square:hover {
   background-repeat: no-repeat;
 }
 
-
 .to-do.one {
   background-image: url(to-do-one.jpg);
   background-position: center;
-
 }
 
 .to-do.two {
