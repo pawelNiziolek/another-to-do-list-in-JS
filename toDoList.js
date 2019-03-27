@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// wyszukiwarka:
-=======
->>>>>>> f5bfae8ef4f8f35acba39d9b71db10142d3d1345
-
 // data:
 const date = document.querySelector("h3.date");
 const newDate = new Date();
@@ -52,14 +47,6 @@ toDoDivs.forEach(toDoDiv => toDoDiv.addEventListener("click", growDiv));
 const removeGrow = () => {
   toDoDivs.forEach(toDoDiv => toDoDiv.classList.remove("grow"));
 };
-<<<<<<< HEAD
-
-document.querySelector("h1").addEventListener("click", removeGrow);
-
-=======
-document.querySelector("h1").addEventListener("click", removeGrow);
->>>>>>> f5bfae8ef4f8f35acba39d9b71db10142d3d1345
-document.querySelector(".wrap-search").addEventListener("click", removeGrow);
 
 // dodawanie zadań :
 // zadania na dzisiaj:
