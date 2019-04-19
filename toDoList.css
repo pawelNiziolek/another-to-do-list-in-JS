@@ -21,7 +21,7 @@ body {
   animation: move 17s linear infinite;
 }
 
-/* zatrzymanie animacji: */
+/* animation stop: */
 .no-anime {
   animation: move 0s;
 }

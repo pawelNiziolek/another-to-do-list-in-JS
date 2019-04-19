@@ -1,4 +1,4 @@
-// data:
+// date:
 const date = document.querySelector("h3.date");
 const newDate = new Date();
 const year = newDate.getFullYear();
@@ -11,7 +11,7 @@ const day =
 
 date.textContent = `${year}.${month}.${day}`;
 
-// zegar:
+// clock:
 const hour = document.querySelector(".hour");
 const minute = document.querySelector(".minute");
 const second = document.querySelector(".second");
@@ -35,7 +35,7 @@ setInterval(() => {
   second.textContent = newSecond;
 }, 1000);
 
-// Powiększenie diva z zadaniami:
+// Magnify the diva with tasks:
 const toDoDivs = document.querySelectorAll("div .to-do");
 
 function growDiv() {
@@ -52,8 +52,8 @@ document.querySelector("h1").addEventListener("click", removeGrow);
 
 document.querySelector(".wrap-search").addEventListener("click", removeGrow);
 
-// dodawanie zadań :
-// zadania na dzisiaj:
+// adding tasks:
+// tasks for today:
 const inputFOne = document.querySelector(".f-one input");
 const ulOne = document.querySelector("ul.one");
 const formOne = document.querySelector("form.f-one");
@@ -91,7 +91,7 @@ const renderListOne = () => {
 
 formOne.addEventListener("submit", addTaskOne);
 
-// zadania na jutro:
+// tasks for tomorrow:
 
 const inputFTwo = document.querySelector(".f-two input");
 const ulTwo = document.querySelector("ul.two");
@@ -131,7 +131,7 @@ const renderListTwo = () => {
 
 formTwo.addEventListener("submit", addTaskTwo);
 
-// zadania czas nieokreślony:
+//tasks indefinitely:
 
 const inputFThree = document.querySelector(".f-three input");
 const ulThree = document.querySelector("ul.three");
@@ -170,7 +170,7 @@ const renderListThree = () => {
 
 formThree.addEventListener("submit", addTaskThree);
 
-// wyszukiwarka:
+// search:
 
 const inputS = document.querySelector(".search-i");
 const ulS = document.querySelector(".ul-search");
@@ -201,7 +201,7 @@ const changeColor = () => {
 };
 inputS.addEventListener("input", changeColor);
 
-// animacja move/stop
+// move/stop animation
 
 const btnAnime = document.querySelector(".stop");
 
